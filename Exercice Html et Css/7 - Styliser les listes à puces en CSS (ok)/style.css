@@ -1,0 +1,54 @@
+#list1 {
+    list-style-type: none;
+}
+
+
+
+#list1 li:before { 
+              content:"";
+              display : inline-block;
+              height : 0;
+              width : 0;
+              border-top : 5px solid transparent;
+              border-bottom : 5px solid transparent;
+              border-left : 10px solid darkblue;
+}
+
+#list2 {
+              list-style-type: none;
+}
+
+#list2 li:before { 
+              content:"";
+              display : inline-block;
+              margin-right: 5px;
+              height: 10px;
+              width: 10px;
+              border-width: 2px 2px 2px 2px;
+              background: white;
+              border-color: blue;
+              border-style: solid;
+              transform: rotate(45deg);
+              margin-top: 5px;
+}
+
+#list3 {
+              counter-reset: circle;
+}
+
+#list3  li {
+              counter-increment: circle;
+              list-style-type: none;
+              margin-top: 5px;
+}
+
+#list3  li:before {
+              content: counter(circle);
+              margin-right: 5px;
+              width: 80px;
+              height: 40px;
+              border-radius: 30px;
+              background: rgb(0, 149, 199);
+              color: white;
+              padding: 2px 6px 2px 6px;
+}

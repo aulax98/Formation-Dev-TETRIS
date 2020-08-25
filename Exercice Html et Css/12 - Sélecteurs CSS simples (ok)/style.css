@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+    margin: 250px;
+}
+
+h2{
+    text-align: center;
+    color: white;
+}
+
+.gauche{
+    color: white;
+    text-align: left;
+}
+
+.droite{
+    color: white;
+    text-align: right;
+}
+
+button{
+    display: block;
+    margin: auto;
+    background-color: blue;
+    color: white;
+}

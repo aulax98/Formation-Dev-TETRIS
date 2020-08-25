@@ -1,0 +1,44 @@
+body{
+	font-family: Helvetica Arial sans-serif;
+	line-height: 1.5;
+	margin: 10px;
+	font-size: 1em;
+}
+
+h1 {
+	font-family: helvetica Arial serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 1.5em;
+	color: #454545;
+}
+p:nth-child(2){
+	color: #7a7a7a;
+	margin-left: 20px;
+	margin-bottom: 1.5em;
+}
+
+blockquote{
+	font-family: Helvetica Arial sans-serif;
+	font-style: italic;
+	font-size: 1.2em;
+	margin-right: 80px;
+	margin-bottom: 20px;
+	margin-left: 60px;
+	background-color: #e7f2fa;
+	color: #444;
+	border-left: #8870FF solid 5px ;
+	padding-left: 15px;
+}
+
+em{
+	text-align: right;
+	display: block;
+	padding-right: 50px;
+	padding-bottom: 10px;
+} 
+
+a{
+	color: #8870FF;
+	margin-left: 20px;
+}

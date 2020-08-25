@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>Les selecteurs complexes</title>
+    <meta charset="utf-8">
+	<!-- Le fichier style.css est le fichier que vous devez compléter -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		ul li p{
+			color: #008000;
+		}
+
+		.article > p:nth-child(3){
+			border: 1px grey solid;
+		}
+		.article > p:nth-child(4){
+			border: 1px grey solid;
+		}
+		.article > p:nth-child(6){
+			border: 1px grey solid;
+			background-color: yellow;
+		}
+		.article > p:nth-child(7){
+			border: 1px grey solid;
+		}
+		.exemple > p{
+			border: 1px grey solid;
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+     <div class="article">
+		 <h2>Titre1</h2>
+		 <ul> 
+			<li>Item1:<p>resumé item1.......</p></li>
+			<li>Item2:<p>resumé item2.......</p></li>
+			<li>Item3:<p>resumé item3.......</p></li>
+		 </ul>
+		 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+		 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+
+     	<h2>Titre2</h2>
+     	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+     	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+     	<div class="exemple">
+     		<h2>exemple1</h2>
+     		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>   
+     	</div>
+     </div>
+</body>
+</html>

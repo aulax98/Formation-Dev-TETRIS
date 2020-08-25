@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+.slider.round {
+    border-radius: 34px;            /*arrondissement des angles*/
+    position: absolute;
+    padding: 5px;
+    color: whitesmoke;
+}
+  
+.slider.round:before {
+    border-radius: 50%;             /*arrondissement des angles*/
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: red;                     /*couleur du fond avant
+                                                    transition*/ 
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 27px;
+    width: 35px;                        
+    left: 4px;
+    bottom: 4px;
+    background-color: white;                /*couleur du bouton*/
+    -webkit-transition: 4s;
+    transition: .4s;                         /*temps de transition du bouton*/
+  }
+  
+  input:checked + .slider {
+    background-color: green;              /*couleur du fond du bouton
+                                            aprés transition*/
+  }
+  
+  input:focus + .slider {
+    box-shadow: 3 3 3px red;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(45px);
+    -ms-transform: translateX(45px);
+    transform: translateX(45px);                  /*effet de transition*/
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;                /*checkbox cacher (hauteur,largeur, opacity)*/
+    height: 0;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 88px;                              /*longueur du fond*/  
+    height: 34px;                             /*hauteur du fond*/
+  }
+    </style>
+</head>
+<body>
+    <label class="switch">
+        <input type="checkbox">
+        <span class="slider round">&nbspOui&nbsp&nbsp&nbsp&nbsp&nbspNon</span>
+      </label>
+</body>
+</html></html>
