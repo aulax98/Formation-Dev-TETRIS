@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo_size.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no ">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.js-scrollTo').on('click', function () { // Au clic sur un élément
+                var page = $(this).attr('href'); // Page cible
+                var speed = 750; // Durée de l'animation (en ms)
+                $('html, body').animate({ scrollTop: $(page).offset().top }, speed); // Go
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header class="jumbotron rounded-0 display-4">
+        <div>
+            <a href="index.html"><img src="21EAOCdUbKL._AC_SX425_.jpg" class=" col-1 offset-11 mb-5 rounded-circle"></a> 
+         </div>
+        <nav class="main-navigation mt-n5">
+            <div class="nav-wrapper">
+                <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
+                <label class="menu-toggle mt-n5" for="menu-checkbox">&equiv;</label>
+                <ul class="menu">
+                    <li><a href="#Formation" class="js-scrollTo text-light">Formazione</a></li>
+                    <li><a href="#Competences" class="js-scrollTo text-light">Abilità</a></li>
+                    <li><a href="#Experiences" class="js-scrollTo text-light">Esperienze professionali</a></li>
+                    <li><a href="#Loisir" class="js-scrollTo text-light">Hobby</a></li>
+                    <li><a href="#apropos" class="js-scrollTo text-light">Contatto</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="entête ml-5 mt-5 text-light">
+            <h3 class="mt-5">Alain Danten</h3>
+            <h1 class="mt-5">Sviluppatore Web</h1>
+        </div>
+    </header>
+    <main class="corps">
+        <div class="container ">
+            <h1 id="Formation" class="text-center mb-5">Formazione</h1>
+            <hr>
+            <div class="row offset-2 mt-5 text-center">
+                <div class="col-5">
+                    <p><em>Certificato di successo HTML5 et CSS3</em> OpenClassRooms/ En ligne/ 2019 </p>
+                    <p class="mt-5"><em>A.A.P Gioielli d'arte</em> / <br>Istituto Professionale<br>Pasteur Nice / 2013 à 2015</p>
+                </div>
+                <div class="col-5">
+                    <p><em>Certificato Sviluppatore Web <br> Web Mobile + Opquast</em>/ <br> SCIC TETRIS / 2020 à 2021</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container mt-5">
+                <h1 id="Competences" class="text-center mb-5">Abilità</h1>
+                <hr>
+                <div class="row offset-3 mt-5">
+                    <div class="col-7 text-center ml-2 mt-n3">
+                        <ul>
+                            <li class="Comp">Analizza le esigenze dei clienti</li>
+                            <li class="Comp">Scrivere una specifica dei requisiti tecnici</li>
+                            <li class="Comp">Produrre un prototipo della soluzione tecnica per la convalida da parte del preside
+                            </li>
+                            <li class="Comp">Determinare le fasi e le procedure dei test tecnici e funzionali di programmi e applicazioni per computer</li>
+                            <li class="Comp">Analizza i problemi tecnici</li>
+                            <li class="Comp">Determina le misure correttive</li>
+                            <li class="Comp">Elaborare le informazioni (raccogliere, classificare e aggiornare)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container ">
+            <h1 id="Experiences" class="text-center mt-5 mb-5">Esperienze professionali</h1>
+            <hr>
+            <div class="row offset-2 mt-5 text-center">
+                <div class="col-5"><br>
+                    <p><em>Fattorino</em><br>UberEats /<br> 2019 à 2020</p><br>
+                    <p><em>Fattorino</em><br> A Koi Ta Pizza / <br>2018</p>
+                </div>
+                <div class="col-5"><br>
+                    <p><em>Fattorino</em><br> La Station Pizza /<br> 2019 à 2020</p><br>
+                    <p><em>Compagno di Squadra</em><br> McDonalds /<br> 2019 à 2020</p>
+                </div>
+            </div>
+        </div>
+        <h1 id="Loisir" class="text-center mt-5">Hobby</h1>
+        <hr>
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="card col-5 flex-row d-flex mt-5 mb-5" id="guitare">
+                        <img class="card-img-top col-6 rounded-circle p-3"
+                            src="Cours-de-guitare-classique-lucien-battaglia.jpg ">
+                        <div class="card-body col-6 ">
+                            <h4 class="card-title text-center font-weight-bold font-italic pt-3">Chitarra</h4>
+                            <hr>
+                            <p>Suona la chitarra da 18 anni</p>
+                        </div>
+                    </div>
+                    <div class="card col-5 offset-2 flex-row d-flex mt-5 mb-5">
+                        <img class="card-img-top col-6 rounded-circle p-3" src="marvel-cinematic-universe.jpg ">
+                        <div class="card-body col-6  ">
+                            <h4 class="card-title text-center font-weight-bold font-italic pt-3">MCU</h4>
+                            <hr>
+                            <p>Appassionato dell'universo cinematografico Marvel</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card col-5 flex-row d-flex mt-5 mb-5">
+                        <img class="card-img-top col-6 rounded-circle p-3" src="gaming-france.jpg ">
+                        <div class="card-body col-6  ">
+                            <h4 class="card-title text-center font-weight-bold font-italic pt-3">Gaming</h4>
+                            <hr>
+                            <p>Computer, Ps4, xbox,<br>rétro-gaming,<br>raspberry pi</p>
+                        </div>
+                    </div>
+                    <div class="card col-5 offset-2 flex-row d-flex mt-5 mb-5">
+                        <img class="card-img-top col-6 rounded-circle p-3" src="unnamed.jpg ">
+                        <div class="card-body col-6  ">
+                            <h4 class="card-title text-center font-weight-bold font-italic pt-3">Série D'Animation</h4>
+                            <hr>
+                            <p>Tokyo Ghoul,<br>Dragon Ball, DeathNote</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="logo_size1.jpg" alt="Signature" class="col-4 offset-8">
+    </main>
+    <footer>
+        <div>
+            <div class="container mt-5 bg-info col-12 pb-4 pt-1">
+                <h1 id="apropos" class="text-center mb-3 mt-5 h-100">Contatto</h1>
+                <hr>
+                <div class="row offset-3 mt-3">
+                    <div class="col-7 text-center ml-2 pt-4">
+                        <ul>
+                            <li class="Comp1">Tel: 06.10.22.20.41</li>
+                            <li class="Comp1">6 CHE St Marc, Villa 10</li>
+                            <li class="Comp1">06130, Le Plan de Grasse</li>
+                            <li class="Comp1">Alpes-Maritime, Francia</li>
+                        </ul>
+                    </div>
+                </div>
+                <p><a class="text-center text-dark font-weight-bold offset-5 col-5"
+                        href="mailto:alain.danten@yahoo.com">Mandami un E-mail</a></p>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+
+</html>

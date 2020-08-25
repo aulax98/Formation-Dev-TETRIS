@@ -1,0 +1,69 @@
+.menu{
+    display: none;
+    flex-basis: 100%;
+}
+
+.menu-checkbox:checked ~ .menu{
+    display: block;
+}
+
+.menu-checkbox{
+    position: absolute;
+    top: -5000px;
+    opacity: 0;
+}
+
+li{
+    list-style: none;
+    font-size: 30px;   
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+label{
+    color: aliceblue;
+    font-size: 70px;
+    margin: 1%;
+}
+
+.nav-wrapper{
+    flex-wrap: wrap;
+}
+
+.jumbotron{
+    background: url(fond-ecran-wallpaper-image-fonds-ecran-abstrait-hd-12.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+hr{
+    display: block;
+    width: 45%;
+}
+
+.Comp{
+    font-size: 15px;
+    list-style-type: Disc;
+    text-align: justify;
+}
+
+.Comp1{
+    font-size: 15px;
+}
+
+@media screen and (orientation: portrait){
+    .jumbotron{
+        background: url(fond-ecran-wallpaper-image-fonds-ecran-abstrait-hd-12.jpg) no-repeat ;
+        background-size: 100vw 150vh;
+        background-attachment: fixed;
+    }
+    #guitare{
+        display: block;
+        max-height: 25%;
+    }
+
+}
