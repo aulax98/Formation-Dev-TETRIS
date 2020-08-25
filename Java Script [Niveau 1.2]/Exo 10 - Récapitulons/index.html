@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Exo 10 JS</title>
+    <script>
+        var nb1 = Math.floor(Math.random() * 101);
+        console.log(nb1)
+        var compteur = 0;
+        while (true) {
+            compteur++;
+            nb = prompt("Tapez votre réponse")  
+            if (nb < nb1){
+                alert("c'est plus")
+            } else if (nb > nb1){
+                alert("c'est moins")
+            } else{
+                alert("Bravo, c'est gagné ! Nombre d'essai =" + compteur)
+                break
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Exercice 10 : Récapitulons</h1>
+    <p>Le jeu du plus ou moins</p>
+</body>
+
+</html>
