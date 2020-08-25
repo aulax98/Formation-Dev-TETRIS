@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bootstrap 5</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav row bg-dark text-center d-flex justify-content-center lead">
+            <li class="col-2"><a href="#" class="text-decoration-none">Accueil</a></li>
+            <li class="col-1"><a href="#" class="text-decoration-none">A Propos</a></li>
+            <li class="col-2"><a href="#" class="text-decoration-none">Nous Contacter</a></li>
+        </ul>
+        <h1>Nav Vertical à gauche</h1>
+        <div class="row">
+            <ul class="nav col-2 flex-column bg-secondary lead nav nav-pills">
+                <li class="pb-2"><a href="#" class="text-decoration-none text-light">Accueil</a></li>
+                <li class="pb-2"><a href="#" class="text-decoration-none text-light">A Propos</a></li>
+                <li class="pb-2"><a href="#" class="text-decoration-none text-light">Nous Contacter</a></li>
+            </ul>
+        </div>
+        <h1>Nav avec contenu</h1>
+        <div class="row">
+            <div class="col-2 bg-secondary ">
+                <div class="nav flex-column nav-pills text-light" id="v-pills-tab">
+                    <a class="nav-link active" id="v-pills-accueil-tab" data-toggle="pill" href="#v-pills-accueil"
+                        aria-selected="false">Accueil</a>
+                    <a class="nav-link" id="v-pills-apropos-tab" data-toggle="pill" href="#v-pills-apropos"
+                        aria-selected="true">A Propos</a>
+                    <a class="nav-link" id="v-pills-nouscontacter-tab" data-toggle="pill" href="#v-pills-nouscontacter"
+                        aria-selected="false">Nous contacter</a>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade" id="v-pills-accueil" role="tabpanel"> </div>
+                    <div class="tab-pane fade" id="v-pills-apropos" role="tabpanel">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Consectetur explicabo possimus delectus nemo sit ratione
+                        cupiditate, sed dolor repudiandae unde ex nam quis provident reprehenderit deserunt ducimus
+                        quia, pariatur impedit?</div>
+                    <div class="tab-pane fade" id="v-pills-nouscontacter" role="tabpanel"> </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>
