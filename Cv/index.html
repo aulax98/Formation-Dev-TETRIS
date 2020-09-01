@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo_size.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no ">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.js-scrollTo').on('click', function () { // Au clic sur un élément
+                var page = $(this).attr('href'); // Page cible
+                var speed = 700; // Durée de l'animation (en ms)
+                $('html, body').animate({ scrollTop: $(page).offset().top }, speed); // Go
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header class="jumbotron rounded-0 display-4">
+        <nav class="main-navigation mt-n5">
+            <div class="nav-wrapper">
+                <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
+                <label class="menu-toggle mt-n5" for="menu-checkbox">&equiv;</label>
+                <ul class="menu">
+                    <li><strong><a href="#Formation" class="js-scrollTo text-light ">Formations</a></strong></li>
+                    <li><strong><a href="#Competences" class="js-scrollTo text-light">Compétences</a></strong></li>
+                    <li><strong><a href="#Experiences" class="js-scrollTo text-light">Expériences</a></strong></li>
+                    <li><strong><a href="#Loisir" class="js-scrollTo text-light">Loisirs</a></strong></li>
+                    <li><strong><a href="#apropos" class="js-scrollTo text-light">A Propos</a></strong></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="entête ml-5 mt-5 text-light">
+            <h3 class="mt-5">Alain Danten</h3>
+            <h1 class="mt-5">Développeur Web <br> Junior</h1>
+        </div>
+    </header>
+    <main class="corps">
+        <div class="container ">
+            <h1 id="Formation" class="text-center mb-5">Formation</h1>
+            <hr>
+            <div class="row offset-2 mt-5 text-center">
+                <div class="col-5">
+                    <p><em>Certificat de réussite HTML5 et CSS3</em> OpenClass<br>Rooms/ En ligne/ 2019 </p>
+                    <p class="mt-5"><em>C.A.P Art du Bijoux et du Joyaux</em> / <br> L.E.P Pasteur Nice / 2013 à 2015
+                    </p>
+                </div>
+                <div class="col-5">
+                    <p><em>Certificat Developpeur Web <br> Web Mobile + Opquast</em>/ <br> SCIC TETRIS / 2020 à 2021</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container mt-5">
+                <h1 id="Competences" class="text-center mb-5">Compétences</h1>
+                <hr>
+                <div class="row offset-2 mt-5">
+                    <div class="col-7 ml-2 mt-n3">
+                        <ul>
+                            <li class="Comp">Analyser les besoins du client</li><br>
+                            <li class="Comp">Rédiger une Spécification Technique de Besoin</li><br>
+                            <li class="Comp">Réaliser un prototype de la solution technique pour validation par le
+                                donneur
+                                d'ordres
+                            </li><br>
+                            <li class="Comp">Déterminer les phases et procédures de tests techniques et fonctionnels de
+                                programmes et applications informatiques</li><br>
+                            <li class="Comp">Analyser des problèmes techniques</li><br>
+                            <li class="Comp">Déterminer des mesures correctives</li><br>
+                            <li class="Comp">Traiter l'information (collecter, classer et mettre à jour)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1 id="Experiences" class="text-center mt-5 mb-5">Expériences Professionnelles</h1>
+            <hr>
+            <div class="row offset-2 mt-5 text-center">
+                <div class="col-5"><br>
+                    <p><em>Livreur de Repas</em><br>UberEats /<br> 2019 à 2020</p><br>
+                    <p><em>Livreur Pizza</em><br> A Koi Ta Pizza / <br>2018</p>
+                </div>
+                <div class="col-5"><br>
+                    <p><em>Livreur Pizza</em><br> La Station Pizza /<br> 2019 à 2020</p><br>
+                    <p><em>Équipier</em><br> McDonalds /<br> 2019 à 2020</p>
+                </div>
+            </div>
+        </div>
+        <h1 id="Loisir" class="text-center mt-5">Loisirs</h1>
+        <hr>
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="card col-5 flex-row d-flex mt-5 ml-3 mb-5">
+                        <img class="card-img-top col-6 rounded-circle p-3"
+                            src="Cours-de-guitare-classique-lucien-battaglia.jpg ">
+                        <div class="card-body col-12 ml-n3">
+                            <h4 class="card-title text-center font-weight-bold font-italic pt-3">Guitare</h4>
+                            <hr>
+                            <p>Pratique la Guitare depuis l'âge de 18ans </p>
+                        </div>
+                    </div>
+                    <div class="card col-5 offset-1 flex-row d-flex mt-5 mb-5">
+                        <img class="card-img-top col-6 rounded-circle p-3" src="marvel-cinematic-universe.jpg ">
+                        <div class="card-body col-12 ml-n3">
+                            <h4 class="card-title text-center font-weight-bold font-italic pt-3">MCU</h4>
+                            <hr>
+                            <p>Passionné par le Marvel Cinematic Universe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card col-5 flex-row d-flex mt-5 ml-3 mb-5">
+                        <img class="card-img-top col-6 rounded-circle p-3" src="gaming-france.jpg ">
+                        <div class="card-body col-12 ml-n3">
+                            <h4 class="card-title text-center font-weight-bold font-italic pt-3">Gaming</h4>
+                            <hr>
+                            <p>Pc, Ps4, xbox,<br>rétro-gaming,<br>raspberry pi</p>
+                        </div>
+                    </div>
+                    <div class="card col-5 offset-1 flex-row d-flex mt-5 mb-5">
+                        <img class="card-img-top col-6 rounded-circle p-3" src="unnamed.jpg ">
+                        <div class="card-body col-12 ml-n3">
+                            <h4 class="card-title font-weight-bold mr-n4 font-italic">Série Animation</h4>
+                            <hr>
+                            <p>Tokyo Ghoul,<br>Dragon Ball, DeathNote</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="logo_size1.jpg" alt="Signature" class="col-4 logo offset-8">
+    </main>
+    <footer>
+        <div>
+            <div class="container mt-5 bg-info col-12 pb-4 pt-1">
+                <h1 id="apropos" class="mb-3 offset-1 mt-5 h-100">A Propos</h1>
+                <hr>
+                <div class="row offset-1 mt-3">
+                    <div class="col-sm-5 ml-n4 pt-4">
+                        <ul>
+                            <li class="Comp">Tel: 06.10.22.20.41</li>
+                            <li class="Comp">6 CHE St Marc, Villa 10</li>
+                            <li class="Comp">06130, Le Plan de Grasse</li>
+                        </ul>
+                    </div>
+                </div>
+                <p><a class="text-center text-dark font-weight-bold offset-1 col-4"
+                        href="mailto:alain.danten@yahoo.com">Contactez-moi par E-mail</a></p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
