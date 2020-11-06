@@ -10,7 +10,7 @@
             'Prenom',
             'Pseudo',
             'Mail', 
-            'Statut'
+            'Statut',
         ]);
         return $usersData;
     }
