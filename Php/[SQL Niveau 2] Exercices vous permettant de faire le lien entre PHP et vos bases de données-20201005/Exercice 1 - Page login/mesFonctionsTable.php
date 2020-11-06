@@ -1,37 +1,44 @@
 <?php
-function affichetable($rows, $headers) {
-    ?>
+function affichetable($usersData, $headers)
+{
+?>
     <table border="1">
         <tr>
-        <?php foreach ($headers as $header): ?>
-            <th><?php echo $header; ?></th>
-        <?php endforeach; ?>
+            <?php foreach ($headers as $header) : ?>
+                <th><?php echo $header; ?></th>
+            <?php endforeach; ?>
         </tr>
 
-        <?php foreach ($rows as $row): ?>
+        <?php foreach ($usersData as $row) : ?>
             <tr>
-            <?php for ($k = 0; $k < count($headers); $k++): ?>
-                <?php if ($k == 0){ ?>
-                    <td><?php echo '<a href=formulaireUtilisateur.php?id='.$row[$k].' >'.$row[$k].'</a>'; ?></td>
-                <?php } else { ?>
-                    <td><?php echo $row[$k]; ?></td>
-                <?php } ?>
-                
-            <?php endfor; ?>
+                <?php foreach ($headers as $header) : ?>
+                    <td><?php echo $row[$header]; ?></td>
+                <?php endforeach; ?>
+                <!-- ici bouton modifier et supprimer -->
+                <td>
+                    <form action="" method="POST">
+                        <input type="hidden" name="userId" value="<?php echo $row['id'] ?>"><button type="submit">Modifier</button>
+                    </form>
+                    <form action="home.php" method="POST">
+                        <input type="hidden" name="userId" value="<?php echo $row['id'] ?>"><button type="submit" name="delData">Supprimer</button>
+                    </form>
+                </td>
             </tr>
         <?php endforeach; ?>
 
     </table>
-    
+
 <?php
 }
-    function getHeaderTable() {
-        $headers = array();
-        $headers[] = "ID";
-        $headers[] = "Nom";
-        $headers[] = "Prenom";
-        $headers[] = "Pseudo";
-        $headers[] = "Mail";
-        return $headers;
-    }
+function getHeaderTable()
+{
+    $headers = array();
+    $headers[] = "id";
+    $headers[] = "Nom";
+    $headers[] = "Prenom";
+    $headers[] = "Pseudo";
+    $headers[] = "Mail";
+    $headers[] = "Statut";
+    return $headers;
+}
 ?>

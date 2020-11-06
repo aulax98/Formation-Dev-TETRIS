@@ -1,8 +1,8 @@
 <?php
-        include_once 'Medoo.php';
-        use Medoo\Medoo;
+    include_once 'Medoo.php';
+    use Medoo\Medoo;
     function dbinit(){
-        
+
         $database = new Medoo(['database_type' => 'mysql',
         'database_name' => 'exercice1n2',         
         'server' => 'localhost',         
@@ -34,6 +34,18 @@
         /* if(!empty($row)){
             return $row[0];
         } */
+        $usersData = dbinit()->get('utilisateurs', [
+            'id',
+            'Nom',
+            'Prenom',
+            'Pseudo',
+            'Mail', 
+            'Statut'
+        ]);
+        if(!empty($usersData)){
+            return $usersData;
+        }
+        
     }
     function createUser($nom, $prenom, $pseudo, $mail, $statut){
         /* try{
@@ -64,10 +76,11 @@
     function deleteUser($id){
         /* try{
             $con = getDatabaseConnexion();
-            $requete = "DELETE from utilisateurs where id = '$id'";
+            $requete = "DELETE from utilisateurs where id => '$id'";
             $stmt = $con->query($requete);
         }catch(PDOException $e){
             echo $requete . "<br>" . $e->getMessage();
         } */
+        dbinit()->delete('utilisateurs', ['id' => $id]);
     }
 ?>

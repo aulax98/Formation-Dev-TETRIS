@@ -8,6 +8,9 @@
     <?php 
         include 'mesFonctionsSql.php';
         include 'mesFonctionsTable.php';
+        if(isset($_POST['delData'])){
+            deleteUser($_POST['userId']);
+        }
         $rows = getAllUsers();
         affichetable($rows, getHeaderTable());
     ?>
