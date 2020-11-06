@@ -1,10 +1,22 @@
 <?php
-    include_once 'database.php';
+        include_once 'Medoo.php';
+        use Medoo\Medoo;
+    function dbinit(){
+        
+        $database = new Medoo(['database_type' => 'mysql',
+        'database_name' => 'exercice1n2',         
+        'server' => 'localhost',         
+        'username' => 'root',
+        'password' => ''     
+        ]);
+        return $database;
+    }
+
     function getAllUsers(){
         /* $con = getDatabaseConnexion();
         $requete = 'SELECT * FROM utilisateurs';    
         $rows = $con->query($requete); */
-        $usersData = $database->select('utilisateurs', [
+        $usersData = dbinit()->select('utilisateurs', [
             'id',
             'Nom',
             'Prenom',
