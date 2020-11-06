@@ -79,7 +79,7 @@
             $requete = "DELETE from utilisateurs where id => '$id'";
             $stmt = $con->query($requete);
         }catch(PDOException $e){
-            echo $requete . "<br>" . $e->getMessage();
+            echo $requete . "<br>" . $e->getMessage()
         } */
         dbinit()->delete('utilisateurs', ['id' => $id]);
     }
